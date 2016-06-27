@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta  charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=8BAGvfWMqIcktfQwtBHHwNglkZ3setVj"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" href="css/p-modal.css">
+	<title>外卖主页</title>
+</head>
+<body>
+	<div class="login-cover"></div>
+	<div class="login-content clearfix" id="login">
+		<div class="login-close">
+			<img src="images/modal-close.png" alt="close" id="login-close">
+		</div>
+		<div class="login-logo">
+			<img src="images/modal-logo.jpg" alt="logo">
+		</div>
+		<form action="/sign" method = 'post'>
+			<input type="text" placeholder="手机号" class="user-name" name="username">
+			<span class="yanzheng-name"></span>
+			<input type="password" placeholder="密码（6位数字）" class="user-pass" name="password">
+			<span class="yanzheng-pass"></span>
+			<!-- <input type="submit" class="login-btn" value="登录"> -->
+			<button type="submit" class="login-btn">登录</button>
+			<div class="login-text clearfix">
+				<p class="login-forget-left">
+					<a href="#">忘记密码</a>
+				</p>
+				<p class="login-forget-right">
+					<span>还没有账号？</span>
+					<a href="#" id="login-to-logup">免费注册</a>
+				</p>
+			</div>
+			<div class="login-other">
+				<div class="login-xian">
+				</div>
+				<p>其他报名方式</p>
+				<div class="login-xian"></div>
+			</div>
+			<button class="login-enroll">不登录，直接报名</button>
+		</form>
+	</div>
+	<!-- 注册部分 -->
+	<div class="login-content clearfix" id="logup">
+		<div class="login-close">
+			<img src="images/modal-close.png" alt="close" id="logup-close">
+		</div>
+		<div class="login-logo">
+			<img src="images/modal-logo.jpg" alt="logo">
+			<p>
+				<a href="#">用手机注册</a>
+			</p>
+		</div>
+		<form action="/register">
+			<input type="text" placeholder="请输入邮箱" class="logup-mail" name="email">
+			<span class="logup-yz-mail"></span>
+			<input type="text" placeholder="用户名，4-16个字符，字母/中文/数字" class="logup-user" name="username">
+			<span class="logup-yz-user"></span>
+			<input type="password" placeholder="设置密码" class="logup-pass" name="password">
+			<span class="logup-yz-pass"></span>
+			<input type="password" placeholder="重复输入" class="logup-paes">
+			<span class="logup-yz-paes"></span>
+			<input type="text" placeholder="输入邀请码，可不填">
+		
+		<div class="login-logup">
+			<p>注册视为同意<span>《爱自驾用户使用协议》</span></p>
+			<input type="submit"  class="login-btnup" value="注册">
+			<!-- <button class="login-btnup">注册</button> -->
+		</form>	
+		</div>
+		<div class="login-other">
+			<div class="login-xian"></div>
+			<p>其他报名方式</p>
+			<div class="login-xian"></div>
+		</div>
+		<button class="login-fast">快速登录></button>
+	</div>
+
+<!-- ........................................... -->
+	<header>
+		<div class="inner">
+			<div class="logo">
+				<h1><a href="menu.html">点我吧外卖</a></h1>
+			</div>
+			<div class="top-right">
+				<a href="#" class="btn" id="login-model">登录</a>
+				<a href="#" class="btn" id="logup-model">注册</a>
+			</div>
+		</div>
+	</header>
+
+
+	<div class="content">
+		<h2>饿了么？赶快上吃货宝</h2>
+		<div class="sousuo">	
+			<div class="dizhi active">
+				<span>上海</span>
+			</div>
+			<div class="qiehuan">
+					<div class="qiehuan_inner">
+						<div class="qhl">
+							<h5>全国:</h5>
+						</div>
+						<div class="qhr">
+							<ul>
+								<li>北京</li>
+								<li>天津</li>
+								<li>河北</li>
+								<li>山西</li>
+								<li>内蒙古</li>
+								<li>辽宁</li>
+								<li>吉林</li>
+								<li>黑龙江</li>
+								<li>上海</li>
+							</ul>
+							<ul>
+								<li>江苏</li>
+								<li>浙江</li>
+								<li>安徽</li>
+								<li>福建</li>
+								<li>江西</li>
+								<li>山东</li>
+								<li>河南</li>
+								<li>湖北</li>
+								<li>湖南</li>
+							</ul>
+							<ul>
+								<li>广东</li>
+								<li>广西</li>
+								<li>海南</li>
+								<li>重庆</li>
+								<li>四川</li>
+								<li>贵州</li>
+								<li>云南</li>
+								<li>西藏</li>
+								<li>山西</li>
+							</ul>
+							<ul>
+								<li>甘肃</li>
+								<li>青海</li>
+								<li>宁夏</li>
+								<li>新疆</li>
+							</ul>
+						</div>
+					</div>
+			</div>
+			<div class="sousuo_input">
+				<input type="text" placeholder="请输入周边美食" class="ip">
+				<span>搜索</span>
+			</div>	
+			<div class="lsjl">
+				<span>历史记录</span>
+			</div>	
+		</div>
+		<div class="ditu">
+				<div id="map"></div>
+		</div>
+	</div>
+
+	
+	<div class="footer">
+		<div class="f_top">
+			<a href="">手机版下载</a>
+			<li>|</li>
+			<a href="">关注微博</a>
+			<li>|</li>
+			<a href="">关注微信</a>
+			<li>|</li>
+			<a href="">我要开店</a>
+			<li>|</li>
+			<a href="">配送合作申请</a>
+		</div>
+		<div class="f_bo">
+			<p>京ICP证070791号 京公网安备11010502025545号</p>
+		</div>
+	</div>
+
+
+
+
+			<script src="js/jquery-1.11.1.js"></script>
+			<script src="js/p-zjtYm.js"></script>
+			<script>
+// =============================================================================地址切换			
+			$(".dizhi").on("click",function(){
+			    if($(this).hasClass("active")){
+			    	$(".qiehuan").css("display","block");
+				  	$(this).removeClass("active");
+			    }else{
+			   		$(".qiehuan").css("display","none");
+		    		$(this).addClass("active");
+		    		}
+			})
+		$(".qhr ul li").click(function(){
+			$(".dizhi span").text($(this).text());
+			$(".qiehuan").css("display","none");
+			$(".dizhi").addClass("active");
+		})
+		$(".qiehuan").mouseleave(function(){
+			$(".qiehuan").css("display","none");
+		})
+// ===================================================================================
+
+	$(".sousuo_input span").click(function(){
+		$(".content h2").animate({"margin-top":-150},1000)
+		$(".content .sousuo").animate({"margin-top":0,"margin-left":0},1000)
+		function showMap(){
+		$(".ditu").css("display","block");
+		}
+		setTimeout(showMap,1000);
+	})
+	
+
+
+		</script>
+
+<!-- --------------------------------------------------------------------------------------------------引用百度地图 -->
+
+		<script type="text/javascript">
+		// 百度地图API功能
+		var map = new BMap.Map("map");
+		map.centerAndZoom(new BMap.Point(105.404, 36.915), 5);
+		map.enableScrollWheelZoom(); 
+		map.enableKeyboard();   // 允许键盘操作
+
+		// 添加各种控件
+	    map.addControl(new BMap.ScaleControl());    		//比例尺控件
+	    map.addControl(new BMap.OverviewMapControl());     //缩略地图控件 
+	    map.addControl(new BMap.MapTypeControl());		  //地图类型控件
+
+	    // 添加带有定位的导航控件
+	  var navigationControl = new BMap.NavigationControl({
+	    // 靠左上角位置
+	    anchor: BMAP_ANCHOR_TOP_LEFT,
+	    // LARGE类型,即显示完整的缩放控件
+	    type: BMAP_NAVIGATION_CONTROL_LARGE,
+	    // 启用显示定位
+	    enableGeolocation: true
+	  });
+	  map.addControl(navigationControl);
+	  // 添加定位控件
+	  var geolocationControl = new BMap.GeolocationControl();
+	  geolocationControl.addEventListener("locationSuccess", function(e){
+	    // 定位成功事件
+	    var address = '';
+	    address += e.addressComponent.province;
+	    address += e.addressComponent.city;
+	    address += e.addressComponent.district;
+	    address += e.addressComponent.street;
+	    address += e.addressComponent.streetNumber;
+	    alert("当前定位地址为：" + address);
+	  });
+	  geolocationControl.addEventListener("locationError",function(e){
+	    // 定位失败事件
+	    alert("未找到城市，请重新搜索");
+	  });
+	  map.addControl(geolocationControl);
+	  function theLocation(){
+			var city = document.getElementById("cityName").value;
+			if(city != ""){
+				map.centerAndZoom(city,11);      // 用城市名设置地图中心点
+			}
+		}
+
+		
+		//添加地图类型和缩略图
+		function add_control(){
+			map.addControl(mapType1);          //2D图，卫星图
+			map.addControl(mapType2);          //左上角，默认地图控件
+			map.setCurrentCity("北京");        //由于有3D图，需要设置城市
+			map.addControl(overView);          //添加默认缩略地图控件
+			map.addControl(overViewOpen);      //右下角，打开
+		}
+	 
+		
+
+
+	     // 地图加载完成后 500 毫秒以下面的中心的和地图等级显示
+		window.onload = function(){
+			setTimeout(function(){
+				map.centerAndZoom(new BMap.Point(105.404, 36.915), 5)
+			},500)
+		}
+			
+		
+
+		
+	</script>
+
+
+</body>
+</html>

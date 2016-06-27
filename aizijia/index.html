@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" href="css/p-zjtYm.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="css/p-modal.css">
+</head>
+<body>
+	<div class="login-cover"></div>
+	<div class="login-content clearfix" id="login">
+		<div class="login-close">
+			<img src="images/modal-close.png" alt="close" id="login-close">
+		</div>
+		<div class="login-logo">
+			<img src="images/modal-logo.png" alt="logo">
+		</div>
+		<form action="/sign" method = 'post'>
+			<input type="text" placeholder="手机号" class="user-name" name="username">
+			<span class="yanzheng-name"></span>
+			<input type="password" placeholder="密码（6位数字）" class="user-pass" name="password">
+			<span class="yanzheng-pass"></span>
+			<!-- <input type="submit" class="login-btn" value="登录"> -->
+			<button type="submit" class="login-btn">登录</button>
+			<div class="login-text clearfix">
+				<p class="login-forget-left">
+					<a href="#">忘记密码</a>
+				</p>
+				<p class="login-forget-right">
+					<span>还没有账号？</span>
+					<a href="#" id="login-to-logup">免费注册</a>
+				</p>
+			</div>
+			<div class="login-other">
+				<div class="login-xian">
+				</div>
+				<p>其他报名方式</p>
+				<div class="login-xian"></div>
+			</div>
+			<button class="login-enroll">不登录，直接报名</button>
+		</form>
+	</div>
+	<!-- 注册部分 -->
+	<div class="login-content clearfix" id="logup">
+		<div class="login-close">
+			<img src="images/modal-close.png" alt="close" id="logup-close">
+		</div>
+		<div class="login-logo">
+			<img src="images/modal-logo.png" alt="logo">
+			<p>
+				<a href="#">用手机注册</a>
+			</p>
+		</div>
+		<form action="/register">
+			<input type="text" placeholder="请输入邮箱" class="logup-mail" name="email">
+			<span class="logup-yz-mail"></span>
+			<input type="text" placeholder="用户名，4-16个字符，字母/中文/数字" class="logup-user" name="username">
+			<span class="logup-yz-user"></span>
+			<input type="password" placeholder="设置密码" class="logup-pass" name="password">
+			<span class="logup-yz-pass"></span>
+			<input type="password" placeholder="重复输入" class="logup-paes">
+			<span class="logup-yz-paes"></span>
+			<input type="text" placeholder="输入邀请码，可不填">
+		
+		<div class="login-logup">
+			<p>注册视为同意<span>《爱自驾用户使用协议》</span></p>
+			<input type="submit"  class="login-btnup" value="注册">
+			<!-- <button class="login-btnup">注册</button> -->
+		</form>	
+		</div>
+		<div class="login-other">
+			<div class="login-xian"></div>
+			<p>其他报名方式</p>
+			<div class="login-xian"></div>
+		</div>
+		<button class="login-fast">快速登录></button>
+	</div>
+	<!-- ************************** -->
+	<div class="top">
+		<div class="top-inner clearfix">
+			<div class="left clearfix">
+				<div class="le-le ">
+					<a class="changecolor changemap" href="#">
+						<img id="map" class="before" src="images/top-map.png" alt="">
+						<img class="after" src="images/top-map-blue.png" alt="">
+						<span class="change">秦皇岛</span>
+						<span class="gray">切换</span>
+					</a>
+				</div>
+				<div class="map clearfix dis">
+					<div class="title">
+						<p>全国：</p>
+					</div>
+					<div class="mapbox">
+						<ul class="mapList clearfix">
+							<li><a href="#">北京</a></li>
+							<li><a href="#">天津</a></li>
+							<li><a href="#">河北</a></li>
+							<li><a href="#">山西</a></li>
+							<li><a href="#">内蒙古</a></li>
+							<li><a href="#">辽宁</a></li>
+							<li><a href="#">吉林</a></li>
+							<li><a href="#">黑龙江</a></li>
+							<li><a href="#">上海</a></li>
+						</ul>
+						<ul class="mapList clearfix">
+							<li><a href="#">江苏</a></li>
+							<li><a href="#">浙江</a></li>
+							<li><a href="#">安徽</a></li>
+							<li><a href="#">福建</a></li>
+							<li><a href="#">江西</a></li>
+							<li><a href="#">山东</a></li>
+							<li><a href="#">河南</a></li>
+							<li><a href="#">湖北</a></li>
+							<li><a href="#">湖南</a></li>
+						</ul>
+						<ul class="mapList clearfix">
+							<li><a href="#">广东</a></li>
+							<li><a href="#">广西</a></li>
+							<li><a href="#">海南</a></li>
+							<li><a href="#">重庆</a></li>
+							<li><a href="#">四川</a></li>
+							<li><a href="#">贵州</a></li>
+							<li><a href="#">云南</a></li>
+							<li><a href="#">西藏</a></li>
+							<li><a href="#">陕西</a></li>
+						</ul>
+						<ul class="mapList clearfix">
+							<li><a href="#">甘肃</a></li>
+							<li><a href="#">青海</a></li>
+							<li><a href="#">宁夏</a></li>
+							<li><a href="#">新疆</a></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
+				<div class="le-ri">
+					<a class="changecolor" href="#">
+						<img id="phone" class="before" src="images/top-phone.png" alt="">
+						<img class="after" src="images/top-phone-blue.png" alt="">
+						<span>下载手机APP</span>
+					</a>
+				</div>
+			</div>
+			<div class="right clearfix">
+				<a class="changecolor" href="#">
+					<img id="qq" class="before" src="images/top-qq.png" alt="">
+					<img class="after" src="images/top-qq-blue.png" alt="">
+				</a>
+				<a class="changecolor" href="#">
+					<img id="sina" class="before" src="images/top-sina.png" alt="">
+					<img class="after" src="images/top-sina-blue.png" alt="">
+				</a>
+				<a  id="login-model">登录</a>
+				<span class="rule">|</span>
+				<a href="#" id="logup-model">注册</a>
+			</div>
+		</div>
+	</div>
+	<header>
+		<div class="header-inner clearfix">
+			<div class="logo">
+				<img src="images/logo.jpg" alt="">
+			</div>
+			<div class="nav">
+				<ul class="nav-list clearfix">
+					<li><a href="index.html">首页</a></li>
+					<li><a href="国内景点.html">国内景点</a></li>
+					<li><a href="景点详情.html">景点详情</a></li>
+					<li><a href="路线查询.html">路线查询</a></li>
+					<li><a  class="blue" href="基本信息.html">基本信息</a></li>
+					<li><a href="我的订单.html">我的订单</a></li>
+					<li><a href="订单详情.html">订单详情</a></li>
+					<li><a href="支付页面.html">支付页面</a></li>
+					<li><a href="行程点评.html">行程点评</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div class="banner">
+		<div id="picBox" >
+			<ul id="picList">
+				<li><img src="images/111.jpg" alt="图片无法显示"></li>
+				<li><img src="images/333.jpg" alt="图片无法显示"></li>
+				<li><img src="images/p-gracetan_03.png" alt="图片无法显示"></li>
+			</ul>
+			<ul id="numList">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+	</div>
+	<div class="search">
+		<input type="text" placeholder="请输入出发地" class="sch-txt">
+		<a href="#">
+			<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+		</a>
+		<ul class="search_ul clearfix">热门搜索：
+			<li><a href="#">山海关</a></li>
+			<li><a href="#">南戴河</a></li>
+			<li><a href="#">北戴河</a></li>
+			<li><a href="#">鸽子窝</a></li>
+			<li><a href="#"></a></li>
+			<li><a href="#">动物园</a></li>
+			<li><a href="#">乐岛</a></li>
+			<li><a href="#">南娱</a></li>
+		</ul>
+	</div>
+	<div class="main">
+		<div class="main_inner">
+ 			<div class="inner_top clearfix">
+				<div class="top_title">
+					<h2>秦皇岛</h2><span>山海关</span><a href="p-zjtJnlb.html">更多>></a>
+				</div>
+				<div class="top_container">
+					<div class="containers">
+						<a href="xqy.html"  class="contain-image">
+							<p>山海关长城之旅</p>
+							<img src="images/山海关.jpg" alt="">
+						</a>
+						<div class="jiawei">
+							<span>45<sub>起</sub></span>
+							<span>2015-3-17出发</span>
+							<span>1天</span>
+						</div>
+						<div class="jiawei_two">
+							<p>燕大-科师-建材-东大-目的地</p>
+							<p>天下第一关</p>
+						</div>
+						<div class="jiawei_three">
+							<span>
+								<img src="images/p-main-con-three.png" alt="">
+								<a href="izijiaLeader.html">秦皇岛自驾游山海关站</a>
+							</span>
+							<span>
+								<a class="yzheng">
+									<img src="images/p-main-con-three0.png" alt="" class="before-yzheng">
+									<img src="images/p-main-con-three0-1.png" alt="" class="after-yzheng">
+								</a>
+								<a class="yzclass">36</a>
+								<a class="zan">
+									<img src="images/p-main-con-three1.png" alt="" class="before-zan">
+									<img src="images/p-main-con-three1-1.png" alt="" class="after-zan">
+								</a>
+								<a>0</a>
+							</span>
+						</div>
+					</div>
+					<div class="containers">
+						<a href="#"  class="contain-image">
+							<p>屯兵重地老龙头自驾</p>
+							<img src="images/老龙头.jpg" alt="">
+						</a>
+						<div class="jiawei">
+							<span>30<sub>起</sub></span>
+							<span>2015-4-20出发</span>
+							<span>1天</span>
+						</div>
+						<div class="jiawei_two">
+							<p>燕大-科师-建材-东大-目的地</p>
+							<p>将帅府第，重兵把守</p>
+						</div>
+						<div class="jiawei_three">
+							<span>
+								<img src="images/p-main-con-three.png" alt="">
+								<a>秦皇岛自驾游老龙头站</a>
+							</span>
+							<span>
+								<a class="yzheng">
+									<img src="images/p-main-con-three0.png" alt="" class="before-yzheng">
+									<img src="images/p-main-con-three0-1.png" alt="" class="after-yzheng">
+								</a>
+								<a>36</a>
+								<a class="zan"><img src="images/p-main-con-three1.png" alt="" class="before-zan"><img src="images/p-main-con-three1-1.png" alt="" class="after-zan"></a>
+								<a>0</a>
+							</span>
+						</div>
+					</div>
+					
+					<div class="containers">
+						<a href="#"  class="contain-image">
+							<p>求仙入海处自驾一日游</p>
+							<img src="images/求仙入海处.jpg" alt="">
+						</a>
+						<div class="jiawei">
+							<span>38<sub>起</sub></span>
+							<span>2015-5-3出发</span>
+							<span>1天</span>
+						</div>
+						<div class="jiawei_two">
+							<p>燕大-科师-建材-东大-目的地</p>
+							<p>求仙盛宴，夏季入海处</p>
+						</div>
+						<div class="jiawei_three">
+							<span>
+								<img src="images/p-main-con-three.png" alt="">
+								<a>秦皇岛自驾求仙入海处</a>
+							</span>
+							<span>
+								<a class="yzheng">
+									<img src="images/p-main-con-three0.png" alt="" class="before-yzheng">
+									<img src="images/p-main-con-three0-1.png" alt="" class="after-yzheng">
+								</a>
+								<a>386</a>
+								<a class="zan"><img src="images/p-main-con-three1.png" alt="" class="before-zan"><img src="images/p-main-con-three1-1.png" alt="" class="after-zan"></a>
+								<a>0</a>
+							</span>
+						</div>
+					</div>
+					<div class="containers">
+						<a href="#"  class="contain-image">
+							<p>恋上那个小岛，欢乐小岛1日游</p>
+							<img src="images/乐岛.jpg" alt="">
+						</a>
+						<div class="jiawei">
+							<span>80<sub>起</sub></span>
+							<span>2015-6-30出发</span>
+							<span>1天</span>
+						</div>
+						<div class="jiawei_two">
+							<p>燕大-科师-建材-东大-目的地</p>
+							<p>中国最美的十大海岛之一</p>
+						</div>
+						<div class="jiawei_three">
+							<span>
+								<img src="images/p-main-con-three.png" alt="">
+								<a>秦皇岛自驾游乐岛站</a>
+							</span>
+							<span>
+								<a class="yzheng">
+									<img src="images/p-main-con-three0.png" alt="" class="before-yzheng">
+									<img src="images/p-main-con-three0-1.png" alt="" class="after-yzheng">
+								</a>
+								<a>36</a>
+								<a class="zan"><img src="images/p-main-con-three1.png" alt="" class="before-zan"><img src="images/p-main-con-three1-1.png" alt="" class="after-zan"></a>
+								<a>0</a>
+							</span>
+						</div>
+					</div>
+					<div class="containers">
+						<a href="#"  class="contain-image">
+							<p>燕塞湖自驾行摄之旅</p>
+							<img src="images/燕塞湖.jpg" alt="">
+						</a>
+						<div class="jiawei">
+							<span>60<sub>起</sub></span>
+							<span>2015-7-03出发</span>
+							<span>1天</span>
+						</div>
+						<div class="jiawei_two">
+							<p>燕大-科师-建材-东大-目的地</p>
+							<p>壮美东川，光影元阳</p>
+						</div>
+						<div class="jiawei_three">
+							<span>
+								<img src="images/p-main-con-three.png" alt="">
+								<a>秦皇岛自驾游燕塞湖站</a>
+							</span>
+							<span>
+								<a class="yzheng">
+									<img src="images/p-main-con-three0.png" alt="" class="before-yzheng">
+									<img src="images/p-main-con-three0-1.png" alt="" class="after-yzheng">
+								</a>
+								<a>36</a>
+								<a class="zan"><img src="images/p-main-con-three1.png" alt="" class="before-zan"><img src="images/p-main-con-three1-1.png" alt="" class="after-zan"></a>
+								<a>0</a>
+							</span>
+						</div>
+					</div>
+					<div class="containers">
+						<a href="#"  class="contain-image">
+							<p>仙螺岛1日自驾游</p>
+							<img src="images/仙螺岛.jpg" alt="">
+						</a>
+						<div class="jiawei">
+							<span>36<sub>起</sub></span>
+							<span>2015-7-20出发</span>
+							<span>1天</span>
+						</div>
+						<div class="jiawei_two">
+							<p>燕大-科师-建材-东大-目的地</p>
+							<p>领略仙螺岛风光，品味地道美食</p>
+						</div>
+						<div class="jiawei_three">
+							<span>
+								<img src="images/p-main-con-three.png" alt="">
+								<a>秦皇岛自驾游仙螺岛站</a>
+							</span>
+							<span>
+								<a class="yzheng">
+									<img src="images/p-main-con-three0.png" alt="" class="before-yzheng">
+									<img src="images/p-main-con-three0-1.png" alt="" class="after-yzheng">
+								</a>
+								<a>36</a>
+								<a class="zan">
+									<img src="images/p-main-con-three1.png" alt="" class="before-zan">
+									<img src="images/p-main-con-three1-1.png" alt="" class="after-zan">
+								</a>
+								<a>0</a>
+							</span>
+						</div>
+					</div>
+					
+					
+					<div class="containers">
+						<a href="#"  class="contain-image">
+							<p>秦皇岛动物园之行</p>
+							<img src="images/动物园.jpg" alt="">
+						</a>
+						<div class="jiawei">
+							<span>80<sub>起</sub></span>
+							<span>2015-6-30出发</span>
+							<span>1天</span>
+						</div>
+						<div class="jiawei_two">
+							<p>东大-建材-科师-燕大-目的地</p>
+							<p>体验动物世界的乐趣。</p>
+						</div>
+						<div class="jiawei_three">
+							<span>
+								<img src="images/p-main-con-three.png" alt="">
+								<a>秦皇岛自驾游动物园站</a>
+							</span>
+							<span>
+								<a class="yzheng">
+									<img src="images/p-main-con-three0.png" alt="" class="before-yzheng">
+									<img src="images/p-main-con-three0-1.png" alt="" class="after-yzheng">
+								</a>
+								<a>36</a>
+								<a class="zan"><img src="images/p-main-con-three1.png" alt="" class="before-zan"><img src="images/p-main-con-three1-1.png" alt="" class="after-zan"></a>
+								<a>0</a>
+							</span>
+						</div>
+					</div>
+					<div class="containers">
+						<a href="#"  class="contain-image">
+							<p>海底世界，不一样的景观</p>
+							<img src="images/海底世界.jpg" alt="">
+						</a>
+						<div class="jiawei">
+							<span>80<sub>起</sub></span>
+							<span>2015-8-30出发</span>
+							<span>1天</span>
+						</div>
+						<div class="jiawei_two">
+							<p>燕大-科师-建材-东大-目的地</p>
+							<p>海底奇观，海豚表演</p>
+						</div>
+						<div class="jiawei_three">
+							<span>
+								<img src="images/p-main-con-three.png" alt="">
+								<a>秦皇岛新澳海底世界站</a>
+							</span>
+							<span>
+								<a class="yzheng">
+									<img src="images/p-main-con-three0.png" alt="" class="before-yzheng">
+									<img src="images/p-main-con-three0-1.png" alt="" class="after-yzheng">
+								</a>
+								<a>36</a>
+								<a class="zan"><img src="images/p-main-con-three1.png" alt="" class="before-zan"><img src="images/p-main-con-three1-1.png" alt="" class="after-zan"></a>
+								<a>0</a>
+							</span>
+						</div>
+					</div>
+					<div class="containers">
+						<a href="#"  class="contain-image">
+							<p>祖山落叶风景迷人自驾</p>
+							<img src="images/祖山.jpg" alt="">
+						</a>
+						<div class="jiawei">
+							<span>30<sub>起</sub></span>
+							<span>2015-10-1出发</span>
+							<span>1天</span>
+						</div>
+						<div class="jiawei_two">
+							<p>燕大-科师-建材-东大-目的地</p>
+							<p>迷人落叶，堪比香山。</p>
+						</div>
+						<div class="jiawei_three">
+							<span>
+								<img src="images/p-main-con-three.png" alt="">
+								<a>中国自驾游祖山站</a>
+							</span>
+							<span>
+								<a class="yzheng">
+									<img src="images/p-main-con-three0.png" alt="" class="before-yzheng">
+									<img src="images/p-main-con-three0-1.png" alt="" class="after-yzheng">
+								</a>
+								<a>36</a>
+								<a class="zan"><img src="images/p-main-con-three1.png" alt="" class="before-zan"><img src="images/p-main-con-three1-1.png" alt="" class="after-zan"></a>
+								<a>0</a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="inner_bottom clearfix">
+				<div class="bottom_title">
+					<h2>北戴河</h2><span>南戴河</span><a href="#">更多>></a>
+				</div>
+				<div class="bottom_container">
+					<div class="containers">
+						<a href="#"  class="contain-image">
+							<p>鸽子窝精彩游玩之旅</p>
+							<img src="images/鸽子窝.jpg" alt="">
+						</a>
+						<div class="jiawei">
+							<span>40<sub>起</sub></span>
+							<span>2016-5-02出发</span>
+							<span>1天</span>
+						</div>
+						<div class="jiawei_two">
+							<p>东大-建材-科师-燕大-目的地</p>
+							<p>辽阔海滩观万千白鸽</p>
+						</div>
+						<div class="jiawei_three">
+							<span>
+								<img src="images/p-main-con-three.png" alt="">
+								<a>北戴河鸽子窝自驾游</a>
+							</span>
+							<span>
+								<a class="yzheng">
+									<img src="images/p-main-con-three0.png" alt="" class="before-yzheng">
+									<img src="images/p-main-con-three0-1.png" alt="" class="after-yzheng">
+								</a>
+								<a>36</a>
+								<a class="zan"><img src="images/p-main-con-three1.png" alt="" class="before-zan"><img src="images/p-main-con-three1-1.png" alt="" class="after-zan"></a>
+								<a>0</a>
+							</span>
+						</div>
+					</div>
+					<div class="containers">
+						<a href="#"  class="contain-image">
+							<p>北戴河联峰山自驾之旅</p>
+							<img src="images/联峰山.jpg" alt="">
+						</a>
+						<div class="jiawei">
+							<span>20<sub>起</sub></span>
+							<span>2015-6-02出发</span>
+							<span>1天</span>
+						</div>
+						<div class="jiawei_two">
+							<p>东大-建材-科师-燕大-目的地</p>
+							<p>连绵的山峰，翠绿的世界。</p>
+						</div>
+						<div class="jiawei_three">
+							<span>
+								<img src="images/p-main-con-three.png" alt="">
+								<a>北戴河联峰山自驾游</a>
+							</span>
+							<span>
+								<a class="yzheng">
+									<img src="images/p-main-con-three0.png" alt="" class="before-yzheng">
+									<img src="images/p-main-con-three0-1.png" alt="" class="after-yzheng">
+								</a>
+								<a>36</a>
+								<a class="zan"><img src="images/p-main-con-three1.png" alt="" class="before-zan"><img src="images/p-main-con-three1-1.png" alt="" class="after-zan"></a>
+								<a>0</a>
+							</span>
+						</div>
+					</div>
+					<div class="containers">
+						<a href="#"  class="contain-image">
+							<p>怪楼奇园观光自驾之旅</p>
+							<img src="images/怪楼.jpg" alt="">
+						</a>
+						<div class="jiawei">
+							<span>40<sub>起</sub></span>
+							<span>2015-5-30出发</span>
+							<span>1天</span>
+						</div>
+						<div class="jiawei_two">
+							<p>东大-建材-科师-燕大-目的地</p>
+							<p>怪楼林立，感受奇妙的世界</p>
+						</div>
+						<div class="jiawei_three">
+							<span>
+								<img src="images/p-main-con-three.png" alt="">
+								<a>北戴河怪楼自驾之旅</a>
+							</span>
+							<span>
+								<a class="yzheng">
+									<img src="images/p-main-con-three0.png" alt="" class="before-yzheng">
+									<img src="images/p-main-con-three0-1.png" alt="" class="after-yzheng">
+								</a>
+								<a>36</a>
+								<a class="zan"><img src="images/p-main-con-three1.png" alt="" class="before-zan"><img src="images/p-main-con-three1-1.png" alt="" class="after-zan"></a>
+								<a>0</a>
+							</span>
+						</div>
+					</div>
+					<div class="containers">
+						<a href="#"  class="contain-image">
+							<p>北戴河集发自驾之旅</p>
+							<img src="images/集发.jpg" alt="">
+						</a>
+						<div class="jiawei">
+							<span>30<sub>起</sub></span>
+							<span>2015-6-11出发</span>
+							<span>1天</span>
+						</div>
+						<div class="jiawei_two">
+							<p>建材-科师-燕大-东油-目的地</p>
+							<p>集发观光植物园</p>
+						</div>
+						<div class="jiawei_three">
+							<span>
+								<img src="images/p-main-con-three.png" alt="">
+								<a>北戴河集发自驾之旅</a>
+							</span>
+							<span>
+								<a class="yzheng">
+									<img src="images/p-main-con-three0.png" alt="" class="before-yzheng">
+									<img src="images/p-main-con-three0-1.png" alt="" class="after-yzheng">
+								</a>
+								<a>36</a>
+								<a class="zan"><img src="images/p-main-con-three1.png" alt="" class="before-zan"><img src="images/p-main-con-three1-1.png" alt="" class="after-zan"></a>
+								<a>0</a>
+							</span>
+						</div>
+					</div>
+					<div class="containers">
+						<a href="#"  class="contain-image">
+							<p>南戴河娱乐中心自驾之旅</p>
+							<img src="images/南戴河.jpg" alt="">
+						</a>
+						<div class="jiawei">
+							<span>120<sub>起</sub></span>
+							<span>2015-5-30出发</span>
+							<span>1天</span>
+						</div>
+						<div class="jiawei_two">
+							<p>山海关-秦皇岛-北戴河-南戴河</p>
+							<p>娱乐游玩，观光赏景，放松心情。</p>
+						</div>
+						<div class="jiawei_three">
+							<span>
+								<img src="images/p-main-con-three.png" alt="">
+								<a>南戴河娱乐中心</a>
+							</span>
+							<span>
+								<a class="yzheng">
+									<img src="images/p-main-con-three0.png" alt="" class="before-yzheng">
+									<img src="images/p-main-con-three0-1.png" alt="" class="after-yzheng">
+								</a>
+								<a>36</a>
+								<a class="zan"><img src="images/p-main-con-three1.png" alt="" class="before-zan"><img src="images/p-main-con-three1-1.png" alt="" class="after-zan"></a>
+								<a>0</a>
+							</span>
+						</div>
+					</div>
+					<div class="containers">
+						<a href="#"  class="contain-image">
+							<p>黄金海岸1日自驾游</p>
+							<img src="images/黄金海岸.jpg" alt="">
+						</a>
+						<div class="jiawei">
+							<span>80<sub>起</sub></span>
+							<span>2016-10-3出发</span>
+							<span>1天</span>
+						</div>
+						<div class="jiawei_two">
+							<p>山海关-秦皇岛-北戴河-南戴河</p>
+							<p>欣赏海滩，沐浴阳光</p>
+						</div>
+						<div class="jiawei_three">
+							<span>
+								<img src="images/p-main-con-three.png" alt="">
+								<a>昌黎黄金海岸1日自驾游</a>
+							</span>
+							<span>
+								<a class="yzheng">
+									<img src="images/p-main-con-three0.png" alt="" class="before-yzheng">
+									<img src="images/p-main-con-three0-1.png" alt="" class="after-yzheng">
+								</a>
+								<a>36</a>
+								<a class="zan"><img src="images/p-main-con-three1.png" alt="" class="before-zan"><img src="images/p-main-con-three1-1.png" alt="" class="after-zan"></a>
+								<a>0</a>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+		<div class="up">
+			<div class="up-inner">
+				<ul class="up-list clearfix">
+					<li><a class="first" href="">燕山大学出版社</a></li>
+					<li><a class="second" href="">爱旅游</a></li>
+					<li><a class="thrid" href="http://hotel.elong.com/?semwp=common&semid=zdhbaidu&&match_type=1&semtcid=1594148b-826c-4e2e-a643-21bfb04e4cf0">酒店预订</a></li>
+					<li><a class="four" href="https://kyfw.12306.cn/otn/leftTicket/init">车票预订</a></li>
+					<li><a class="fifth" href="">爱旅游品牌店</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="down">
+			<div class="down-inner clearfix">
+				<span class="first">燕山大学出版社股份有限公司</span>
+			<span class="second">京ICP备15018898号-1</span>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+	<script src="js/p-zjtYm.js"></script>
+	<script src="js/public.js"></script>
+	<script type="text/javascript" src="js/turn.js"></script>
+</body>
+</html>

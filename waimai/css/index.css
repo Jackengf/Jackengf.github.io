@@ -1,0 +1,49 @@
+	*{padding: 0;margin: 0;}
+	a{text-decoration: none;}
+	li{list-style: none;}
+	body{background-image: url(../images/bg.jpg);background-repeat: no-repeat;width: 100%;height: 100%;font-family: "Microsoft Yahei";background-size: cover;}
+	header{width: 100%;background:#ff9500;height:60px;}
+	header .inner{width:71.7423%; /*980/1366*/margin:0 auto;}
+	header .logo{float: left;overflow:hidd}
+	header .logo h1{width:120px;height: 30px;margin-top: 15px;background: url(../images/logo.png) no-repeat;}
+	header .logo a{width:120px;height: 30px;display: block;text-indent: -9999px;}
+	header .top-right{float: right;margin-top: 15px;}
+	header .top-right .btn{display:inline-block;height: 26px;line-height: 26px;border: 1px solid #fff;border-radius: 14px;background: none;color: #fff;font-size: 14px; margin-left: 20px;padding:0 20px;}
+ 
+
+
+
+
+	.content{width: 1040px;height: 500px;margin: 0 auto ;margin-top: 40px;}
+	.content h2{float: left;margin-top: 150px;margin-left: 380px;}
+	.content .sousuo{width: 880px;float: left;margin-left: 80px;margin-top: 20px;position: relative;}
+	.content .sousuo .dizhi{width: 120px;height: 56px;float: left;line-height: 56px;text-align: center;background-color: #fff;background-image: url(images/sd.jpg);background-repeat: no-repeat;background-position: 88px 23px;cursor: pointer;}
+
+
+	.content .sousuo .qiehuan{width: 680px;height: 112px;box-shadow: 1px 1px 3px grey;position:absolute;top: 60px;left: 0px;z-index: 999;background-color: #fff;display: none;}
+	.content .sousuo .qiehuan .qiehuan_inner{width: 650px;margin: 0 auto;height: 112px;}
+	.content .sousuo .qiehuan .qiehuan_inner li{list-style: none;line-height: 22px;float:left;margin-top: 5px;color: #50bbdb;cursor: pointer;width: 60px;text-align: center;}
+	.content .sousuo .qiehuan .qiehuan_inner .qhl{float: left;margin-left: 15px;}
+	.content .sousuo .qiehuan .qiehuan_inner .qhl h5{font-size: 15px;margin-top: 8px;}
+	.content .sousuo .qiehuan .qiehuan_inner .qhr{float: right;margin-right: 30px;}
+
+
+
+	.content .sousuo .sousuo_input{float: left;margin-left: 5px;overflow: hidden;}
+	.content .sousuo .ip{width: 480px;height: 56px;float: left;font-size: 16px;padding-left: 5px;border: 0;}
+	.content .sousuo .sousuo_input span{background-color: yellow;width: 130px;height: 56px;float: left;text-align: center;line-height: 56px;color: red;cursor: pointer;}
+	.content .sousuo .lsjl{width: 130px;height: 56px;background-image: url(../images/sd.jpg);background-repeat: no-repeat;background-position: 102px 25px;float: left;background-color: #fff;line-height: 56px;text-align: center;float: right;cursor: pointer;}
+	.content .ditu{width: 980px;height: 400px;margin-top: 20px;float: left;display: none;}
+	.content  #map{width: 100%;height: 100%;}
+
+
+
+
+
+
+	.footer{width: 100%;margin-top: 10px;margin-bottom: 15px;}
+	.footer .f_top{margin: 0 auto;width: 480px;height: 19px;}
+	.footer .f_top a{float: left;font-size: 14px;color: #fff;}
+	.footer .f_top li{float: left;margin: 0 17px;color: #fff;}
+	.footer .f_bo{margin: 0 auto;width: 272px;height: 16px;}
+	.footer p{color: #8A8A8A;font-size: 12px;}
