@@ -2,7 +2,7 @@
 	a{text-decoration: none;}
 	li{list-style: none;}
 	body{background-image: url(../images/bg.jpg);background-repeat: no-repeat;width: 100%;height: 100%;font-family: "Microsoft Yahei";background-size: cover;}
-	header{width: 100%;background:#ff9500;height:60px;}
+	header{width: 100%;background:#ff9500;height:60px;min-width: 1209px;}
 	header .inner{width:71.7423%; /*980/1366*/margin:0 auto;}
 	header .logo{float: left;overflow:hidd}
 	header .logo h1{width:120px;height: 30px;margin-top: 15px;background: url(../images/logo.png) no-repeat;}
